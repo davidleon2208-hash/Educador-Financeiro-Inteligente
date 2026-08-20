@@ -12,6 +12,7 @@ export function SimulationHero() {
         aria-hidden="true"
         className="h-16 w-16 sm:-mt-2 sm:-mt-3"
         />
+        
       <p className="text-muted-foreground text-sm">
         Responda algumas perguntas e descubra para ter insights financeiros personalizados.
       </p>
