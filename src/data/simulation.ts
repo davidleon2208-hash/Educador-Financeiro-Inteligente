@@ -72,8 +72,8 @@ export const simulationFormSteps: FormStepProps[] = [
     question:'Em quantos meses você planeja atingir ess objetivo?',
     inputProps:{
       type: 'number',
-      placeholder:'ex: 12',
-      suffix:'meses',
+      placeholder:'ex: 12 meses',
+      suffix: 'meses',
       min: 1,
       max: 120,
     },
