@@ -1,5 +1,6 @@
 import { Button } from '@/components/Shared/Button'
 import { type InputProps } from '@/components/Shared/input'
+import { formatCurrencyMask } from '@/utils/currency'
 import { ArrowLeft, ArrowRight, type LucideIcon } from 'lucide-react'
 import { useState, type SyntheticEvent } from 'react'
 
@@ -36,7 +37,7 @@ export function FormStep({
   const handleSubmit = (e: SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault()
 
-    if (!inputValue){
+    if (!inputValue) {
       return
     }
 
@@ -57,7 +58,13 @@ export function FormStep({
         <input
           {...inputProps}
           value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
+          onChange={(e) =>
+            setInputValue(
+              inputProps.prefix === 'R$'
+                ? formatCurrencyMask(e.target.value)
+                : e.target.value,
+            )
+          }
         />
         <div className="gao-3 flex flex-col sm:flex-row sm:gap-6">
           {!hideBackButton && (

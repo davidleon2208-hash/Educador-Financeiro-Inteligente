@@ -50,7 +50,6 @@ export const simulationFormSteps: FormStepProps[] = [
     question:'Qual o objetivo que você deseja alcançar?',
     inputProps:{
       placeholder:'ex: Viagem para o Peru',
-      prefix:'R$',
       maxLength: 50,
     },
   },
@@ -79,7 +78,7 @@ export const simulationFormSteps: FormStepProps[] = [
     },
     submitButtonProps:{
       label: 'Gerar simulação',
-      emojiIcon: 'star',
+      emojiIcon: '☻☻☻',
     },
   }
 ]
