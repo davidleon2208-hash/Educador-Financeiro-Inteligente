@@ -18,7 +18,7 @@ export interface FormStepProps {
 
 interface ActionsButtonsProps {
   onBack: () => void
-  onNext: () => void
+  onNext: (value: string) => void
   hideBackButton?: boolean
 }
 
@@ -41,7 +41,7 @@ export function FormStep({
       return
     }
 
-    onNext()
+    onNext(inputValue)
   }
   return (
     <div className="bg-card shadow[4px_4px_8px_rgba(0,0,0,0.2)] rounded-2xl p-6 sm:p-8">

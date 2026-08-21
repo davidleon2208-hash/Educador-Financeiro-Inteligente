@@ -1,0 +1,15 @@
+type SimulationFormData ={
+  income: string
+  expenses: string
+  debts: string
+  goalName: string
+  goalAmount: string
+  goalDeadline: string
+}
+
+const data: SimulationFormData = income: "5.000,00",
+expenses: "2.000,00",
+  debts: "500,00",
+  goalName: "Viagem para o exterior",
+  goalAmount: "15.000,00",
+  goalDeadline: "12",
